@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test meteo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bloc_page">
+        <header>
+            <!-- Le menu de navigation (seul Accueil existe) -->
+            <nav>
+                <ul>
+                    <li class="l1"><a id="l1" href="#">Accueil</a></li>
+                    <li class="l2"><a href="#">Contact</a></li>
+                    <li class="l2"><a href="#">Aide</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="research">
+            <!-- La barre de recherche -->
+            <div id="enter-city">
+                <input id="loupe" type="text" placeholder="Entrer une ville">
+            </div>
+            <!-- Le bouton Valider -->
+            <button type="submit" id="valider" class="button-square"><a href="#">search</a></button>
+        </div>
+
+        <section>
+            <!-- Le rectangle à cliquer pour dérouler la page -->
+            <button onclick="afficherPage()" class="page-deroulante">Météo du jour - Concise (cliquer pour dérouler)</button>
+            <!-- Les différentes données météorologiques de la ville -->
+            <div id="maPageDeroulante" class="contenuPageDeroulante">
+                <p id="nom"></p>
+                <p id="temperature"></p>
+                <p id="ressentie"></p>
+                <p id="temperaturemin"></p>
+                <p id="temperaturemax"></p>
+                <p id="humidite"></p>
+                <p id="pression"></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Le Footer : le bas de page avec le Copyright -->
+    <footer>
+        <center>
+            <p>Copyright © Modified by El Hezami Makram</p>
+        </center>
+    </footer>
+
+    <!-- On charge le fichier js -->
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>

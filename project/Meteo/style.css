@@ -1,0 +1,237 @@
+/* Définition des différentes polices */
+
+@font-face {
+	font-family: 'Amble';
+	src: url('fonts/Amble-Regular-webfont.eot');
+	src: url('fonts/Amble-Regular-webfont.eot#iefix') format('eot'),
+		 url('fonts/Amble-Regular-webfont.ttf') format('ttf'),
+		 url('fonts/Amble-Regular-webfont.woff') format('woff'),
+		 url('fonts/Amble-Regular-webfont.svg') format('svg');
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: Amble, Arial, sans-serif;
+    color: #000000;
+	background-image: url("img/WAE4.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+nav a
+{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section h1 
+{
+    font-weight: normal;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+	margin-right: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border: 2px solid #090086;
+    box-shadow: 5px 3px 0px 0px rgba(0,0,0,1);
+    background-color: white;
+}
+
+.l1
+{
+	background-color: #87CEFA;
+}
+
+#l1
+{
+	font-weight: bold;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #000000;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav li:hover, nav li:focus
+{
+    color: #000000;
+    background-color: #87CEFA;
+}
+
+/* Champ de texte pour l'utilisateur */
+
+#research 
+{
+	margin: auto;
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+input
+{
+	background-image: url("img/loupe.png");
+	background-size: 20px;
+	background-position: top 5px left 10px;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	width: 500px;
+	height: 30px;
+	font-size: 20px;
+	padding-left: 40px;
+}
+
+.button-square
+{
+	width: 100px;
+	height: 35px;
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 20px;
+	background-color: white;
+	box-shadow: 5px 3px 0px 0px rgba(0,0,0,1);
+}
+
+button a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.button-square:hover, .button-square:focus
+{
+    background-color: #87CEFA;
+}
+
+/* Bouton de la page déroulante */
+
+.page-deroulante 
+{
+    background-color: #87CEFA;
+    color: black;
+    padding: 16px;
+    margin-left: -15px;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Bouton de la page déroulante lors d'un hover et d'un focus */
+
+.page-deroulante:hover, .page-deroulante:focus 
+{
+    background-color: #B0C4DE;
+}
+
+/* Position du contenu de la page déroulante */
+.pageDeroulante 
+{
+    position: relative;
+    display: inline-block;
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 500px;
+    text-align: center;
+  	font-size: 24px;
+}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	padding-left: 15px;
+	background-color: white;
+}
+
+section h1
+{
+	border-bottom: 2px solid black;
+	margin-left: -17px;
+	padding-left: 15px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+#maPageDeroulante
+{
+	margin-top: 0px;
+	margin-left: 20px;
+	font-size: 20px;
+	display: none;
+}
+
+/* Le Footer */
+
+footer
+{
+	margin-top: 35px;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 20px black;
+}
+
+/* Responsive avec Media Queries */
+
+@media all and (max-width: 1024px)
+{
+	header
+	{
+    	display: flex;
+    	justify-content: flex-start;
+	}
+
+	input
+	{
+		width: 200px;
+	}
+
+	section
+	{
+		width: 400px;
+	}
+
+	footer
+	{
+		font-size: 20px;
+	}
+}
